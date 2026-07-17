@@ -21,23 +21,20 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-[calc(100dvh-2rem)] scroll-mt-24 items-center overflow-hidden bg-canvas px-5 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-20"
+      className="relative flex min-h-[calc(100dvh-2rem)] scroll-mt-24 items-center overflow-hidden bg-canvas py-16 sm:py-20 lg:py-20"
     >
-      <div className="relative mx-auto grid max-w-6xl items-center gap-8 lg:grid-cols-[minmax(0,1.06fr)_minmax(24rem,0.9fr)] lg:gap-12">
+      <div className="relative mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-8 px-4 sm:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(380px,480px)] lg:gap-10 lg:px-8 xl:gap-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="max-w-4xl"
+          className="min-w-0 max-w-4xl"
         >
           <h1 className="max-w-4xl text-[2.4rem] font-bold leading-[0.98] tracking-[-0.04em] text-text-primary sm:text-[clamp(3.25rem,5vw,5rem)]">
             Rabia Nur Akdaş
           </h1>
           <p className="mt-4 text-xl font-semibold leading-7 tracking-[-0.025em] text-navy sm:text-2xl">
             {t("hero.role")}
-          </p>
-          <p className="mt-2 text-base font-semibold leading-7 tracking-[-0.012em] text-text-secondary sm:text-lg">
-            {t("hero.degree")}
           </p>
           <p className="mt-4 max-w-[58ch] text-sm leading-7 text-text-tertiary sm:text-base">
             {t("hero.intro")}
@@ -89,9 +86,9 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.65, delay: 0.1, ease: "easeOut" }}
-          className="relative mx-auto w-full max-w-[31rem] lg:justify-self-end"
+          className="relative mx-auto w-full min-w-0 max-w-[30rem] lg:justify-self-end"
         >
-          <div className="panel-strong overflow-hidden border-navy/25 p-4 shadow-high sm:p-5">
+          <div className="panel-strong overflow-hidden border-navy/25 p-3 shadow-high sm:p-4">
             <div className="relative aspect-[8/9] overflow-hidden rounded-panel border border-navy/20 bg-bg-level-2 shadow-medium">
               <span className="absolute right-3 top-3 z-10 whitespace-nowrap rounded-full border border-brand-link/15 bg-white/90 px-2.5 py-1 text-xs font-semibold text-navy shadow-tiny backdrop-blur-sm sm:right-4 sm:top-4">
                 {t("hero.availability")}
@@ -114,11 +111,14 @@ export function Hero() {
               )}
             </div>
 
-            <div className="mt-3 grid grid-cols-3 gap-2.5 sm:gap-3">
+            <div className="mt-3 grid grid-cols-3 gap-3">
               {stats.map(({ label, value }) => (
-                <div key={label} className="min-w-0 rounded-control border border-border-primary bg-bg-level-2/80 p-3 text-center sm:p-3.5">
+                <div
+                  key={label}
+                  className="flex min-h-[82px] min-w-0 flex-col items-center justify-center rounded-control border border-border-primary bg-bg-level-2/80 px-3 py-4 text-center"
+                >
                   <p className="text-xs font-medium text-text-quaternary">{label}</p>
-                  <p className="mt-1 truncate text-[0.95rem] font-semibold leading-7 tracking-[-0.03em] text-text-primary sm:text-[clamp(0.95rem,2.4vw,1.35rem)]">{value}</p>
+                  <p className="mt-1 text-base font-semibold leading-tight text-text-primary lg:text-lg xl:text-xl">{value}</p>
                 </div>
               ))}
             </div>
