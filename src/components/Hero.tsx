@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import { Code2, Cpu, Database, MapPin, Rocket, UserCheck } from "lucide-react";
+import { Code2, Cpu, Database, Download, MapPin, Rocket, UserCheck } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { getCvDownload } from "../data/cv";
 import { socialLinks } from "../data/socials";
 
 const heroBadges = [
@@ -13,10 +14,11 @@ const heroBadges = [
 const focusAreaIcons = [Code2, Cpu, Database];
 
 export function Hero() {
-  const { t } = useTranslation();
+  const { i18n, t } = useTranslation();
   const [photoLoaded, setPhotoLoaded] = useState(true);
   const stats = t("hero.stats", { returnObjects: true }) as { label: string; value: string }[];
   const focusAreas = t("hero.focusAreas", { returnObjects: true }) as string[];
+  const cvDownload = getCvDownload(i18n.resolvedLanguage ?? i18n.language);
 
   return (
     <section
@@ -78,6 +80,14 @@ export function Hero() {
             })}
             <a href="#contact" className="button-secondary col-span-2 min-h-[52px] py-3 text-base shadow-tiny lg:col-span-1 lg:w-auto lg:text-sm">
               {t("hero.contactCta")}
+            </a>
+            <a
+              href={cvDownload.href}
+              download={cvDownload.fileName}
+              className="button-secondary col-span-2 min-h-[52px] py-3 text-base shadow-tiny lg:col-span-1 lg:w-auto lg:text-sm"
+            >
+              <Download className="size-4" aria-hidden="true" />
+              {t("hero.downloadCv")}
             </a>
           </div>
         </motion.div>
