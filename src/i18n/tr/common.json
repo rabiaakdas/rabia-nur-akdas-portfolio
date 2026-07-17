@@ -1,0 +1,204 @@
+{
+  "nav": {
+    "home": "Ana sayfa",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "languageLabel": "Dil seçimi",
+    "items": {
+      "about": "Hakkımda",
+      "projects": "Projeler",
+      "skills": "Yetenekler",
+      "experience": "Deneyim",
+      "contact": "İletişim"
+    }
+  },
+  "hero": {
+    "role": "Junior Software Engineer",
+    "degree": "Bilgisayar Mühendisi",
+    "intro": "C#, ASP.NET Core, React, Flutter ve PHP ile web, mobil ve backend odaklı projeler geliştiriyorum. Farklı teknolojilerle kullanıcı arayüzü, servis ve veri akışlarını bir arada çalıştırmayı önemsiyorum.",
+    "primaryCta": "Projelerimi İncele",
+    "contactCta": "İletişime Geç",
+    "availability": "Yeni fırsatlara açık",
+    "photoAlt": "Rabia Nur Akdaş profil fotoğrafı",
+    "photoFallback": "Fotoğraf için public klasörüne Rabia_Nur_Akdas_Photo.jpg eklenebilir.",
+    "focusTitle": "Deneyim Kazandığım Alanlar",
+    "badges": {
+      "location": "İstanbul",
+      "graduate": "Yeni Mezun",
+      "projects": "5+ Proje"
+    },
+    "stats": [
+      { "label": "Proje", "value": "5+" },
+      { "label": "Staj", "value": "2" },
+      { "label": "Durum", "value": "Yeni Mezun" }
+    ],
+    "focusAreas": [
+      "Web uygulamaları",
+      "Mobil uygulamalar",
+      "Backend ve veritabanı"
+    ]
+  },
+  "about": {
+    "eyebrow": "Hakkımda",
+    "title": "Yazılım geliştirme alanında kendimi sürekli geliştiren yeni mezun bir bilgisayar mühendisiyim.",
+    "description": "Web, mobil, backend ve veritabanı geliştirme alanlarında farklı teknolojilerle projeler üretmeye odaklanıyorum.",
+    "paragraphs": [
+      "Yeni mezun bir bilgisayar mühendisiyim. C#, ASP.NET Core, React, Flutter, PHP ve veritabanı tabanlı projeler geliştirerek web, mobil ve backend taraflarında pratik deneyim kazandım.",
+      "Kullanıcı arayüzleri, API entegrasyonları, veri saklama yapıları ve proje akışları üzerinde çalışmayı seviyorum. Okunabilir kod, problem çözme ve sürekli gelişim benim için önemli.",
+      "Web ve mobil projelerde kullanıcı arayüzü, API bağlantıları ve veritabanı süreçlerinin birlikte nasıl çalıştığını deneyimledim.",
+      "Takım çalışmasına uyum sağlamayı, geri bildirimlerle gelişmeyi ve yeni teknolojileri gerçek proje ihtiyaçları üzerinden öğrenmeyi önemsiyorum."
+    ],
+    "strengths": {
+      "web": {
+        "title": "Web Geliştirme",
+        "description": "React, ASP.NET Core, PHP ve Laravel ile web uygulaması akışları üzerinde projeler geliştirdim."
+      },
+      "mobile": {
+        "title": "Mobil Uygulama Geliştirme",
+        "description": "Flutter ve Dart ile mobil arayüzler, formlar ve API bağlantıları üzerine çalıştım."
+      },
+      "data": {
+        "title": "Veri ve kalıcılık",
+        "description": "SQL Server, MySQL ve SQLite ile veri saklama, ilişki kurma ve sorgulama pratikleri yaptım."
+      },
+      "learning": {
+        "title": "Öğrenme disiplini",
+        "description": "Öğrendiklerimi küçük denemelerle başlayıp gerçek proje akışlarında uygulamaya çalışıyorum."
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "Öne Çıkan Projeler",
+    "title": "Backend, mobil ve yapay zeka pratiğimi gösteren seçilmiş çalışmalar.",
+    "description": "Her proje; problem çözme, teknoloji seçimi, entegrasyon ve öğrenme çıktısı açısından okunabilir şekilde yapılandırıldı.",
+    "liveDemo": "Canlı Demo",
+    "openDemoLabel": "{{title}} canlı demosunu yeni sekmede aç",
+    "openGithubLabel": "{{title}} GitHub deposunu yeni sekmede aç",
+    "coverAlt": "{{title}} proje kapak görseli",
+    "screens": {
+      "bookVerseBooks": "BookVerse kitaplar ekranı",
+      "bookVerseHome": "ana ekran görüntüsü",
+      "bookVerseProfile": "BookVerse profil ekranı",
+      "blogLogin": "BlogApp giriş ekranı",
+      "blogFeed": "akış ekranı",
+      "blogDetail": "BlogApp gönderi detay ekranı"
+    },
+    "items": {
+      "libraryManagement": {
+        "title": "Library Management",
+        "category": "Web",
+        "shortDescription": "Kitap, kullanıcı, sipariş, favori, yorum ve yönetim süreçlerini kapsayan ASP.NET Core tabanlı katmanlı web uygulaması.",
+        "features": ["Kitap listeleme", "Kitap arama", "Sepet yönetimi", "Favorilere ekleme", "CRUD işlemleri", "Stok yönetimi"]
+      },
+      "fullStackAiChat": {
+        "title": "FullStack AI Chat",
+        "category": "Web / Mobil / Backend / Yapay Zekâ",
+        "shortDescription": "React web, Expo React Native mobil istemci ve ASP.NET Core backend ile geliştirilen sohbet uygulaması. Mesajlar SQLite üzerinde saklanır ve Python servisiyle duygu analizi yapılır.",
+        "features": ["React tabanlı web sohbet arayüzü", "Expo React Native mobil uygulama", "ASP.NET Core Minimal API backend", "Kullanıcı ve mesaj kayıt sistemi", "SQLite veritabanı entegrasyonu", "Mesajlar için duygu analizi"]
+      },
+      "bookVerse": {
+        "title": "BookVerse",
+        "category": "Mobil Uygulama / Full Stack",
+        "shortDescription": "Flutter ve Laravel REST API ile geliştirilen kitap paylaşım platformu. Kullanıcılar kitap paylaşımı, favori, mesajlaşma ve takas süreçlerini yönetebilir.",
+        "features": ["Kitap paylaşımı", "Favoriler", "Takas sistemi", "Ödünç alma", "Mesajlaşma", "Bildirimler"]
+      },
+      "blogApp": {
+        "title": "BlogApp",
+        "category": "Mobil Uygulama / Full Stack",
+        "shortDescription": "Flutter ve Laravel REST API ile geliştirilen blog uygulaması. Kullanıcılar gönderi paylaşabilir, yorum yapabilir ve beğeni akışını kullanabilir.",
+        "features": ["Gönderi yönetimi", "Yorum sistemi", "Beğeni sistemi", "Kullanıcı profili", "Flutter ve Laravel entegrasyonu"]
+      },
+      "petShopWeb": {
+        "title": "PetShop Web",
+        "category": "Web",
+        "shortDescription": "PHP ve MySQL ile geliştirilen evcil hayvan ürünleri e-ticaret uygulaması. Ürün listeleme, kategori filtreleme ve sepet akışlarını içerir.",
+        "features": ["Ürün listeleme", "Kategori bazlı filtreleme", "Sepet sistemi", "Kullanıcı giriş işlemleri"]
+      },
+      "trafficVehicle": {
+        "title": "Trafik Levhasını Tanıyan ve Engelden Kaçan Otonom Araç",
+        "category": "Bilgisayarlı Görü",
+        "shortDescription": "Python ile geliştirilen bilgisayarlı görü odaklı otonom araç projesi. Trafik levhası algılama ve engelden kaçınma kararlarını ele alır.",
+        "features": ["Görüntü işleme", "Trafik işareti algılama", "Karar mekanizması"]
+      }
+    }
+  },
+  "skills": {
+    "eyebrow": "Tech Stack",
+    "title": "Teknoloji Yığını",
+    "description": "Kullandığım teknolojiler kategori bazlı ve sade bir yapıda özetlenmiştir.",
+    "groups": {
+      "backend": {
+        "title": "Backend",
+        "description": "API, veri erişimi ve sunucu tarafı uygulama geliştirme odağım."
+      },
+      "frontend": {
+        "title": "Frontend",
+        "description": "Web arayüzleri ve istemci tarafı geliştirme için kullandığım teknolojiler."
+      },
+      "mobile": {
+        "title": "Mobil",
+        "description": "Mobil uygulama projelerinde kullandığım istemci teknolojileri."
+      },
+      "database": {
+        "title": "Veritabanı",
+        "description": "Projelerde veri saklama ve sorgulama için çalıştığım veritabanları."
+      },
+      "tools": {
+        "title": "Araçlar ve Çalışma Ortamı",
+        "description": "Geliştirme, versiyon kontrolü ve API test süreçlerinde kullandığım araçlar."
+      },
+      "other": {
+        "title": "Diğer",
+        "description": "Proje deneyimlerimde yer alan ek çalışma alanları."
+      }
+    },
+    "items": {
+      "artificialIntelligence": "Yapay Zekâ",
+      "computerVision": "Bilgisayarlı Görü"
+    }
+  },
+  "experience": {
+    "eyebrow": "Deneyimler",
+    "title": "Deneyim",
+    "description": "Staj çalışmalarımda geliştirme, entegrasyon ve test süreçlerinde görev aldım.",
+    "position": "Pozisyon",
+    "company": "Kurum",
+    "badge": "Deneyim",
+    "date": "Tarih: ",
+    "location": "Konum: ",
+    "technologies": "Kullanılan Teknolojiler",
+    "highlights": "Yapılan İşler",
+    "items": {
+      "ferisoft": {
+        "role": "Yazılım Mühendisi Stajyeri",
+        "location": "İstanbul",
+        "period": "Şubat 2026 - Haziran 2026",
+        "highlights": ["Flutter ve GetX ile kullanıcı arayüzleri, formlar ve detay sayfaları geliştirdim.", "REST API servislerini entegre ederek JSON tabanlı veri akışlarını yönettim.", "Servis ve mobil uygulama entegrasyonlarında API hatalarını test ettim ve çözüm süreçlerine katkı sağladım.", "Git kullanarak ekip içi sürüm kontrolü ve geliştirme akışına katkı sağladım."]
+      },
+      "hedef": {
+        "role": "Gönüllü Stajyer",
+        "location": "İstanbul",
+        "period": "Ekim 2025 - Aralık 2025",
+        "highlights": ["Python ile makine öğrenmesi tabanlı yapay zekâ modeli geliştirme çalışmalarına katkı sağladım.", "Veri ön işleme adımlarını uyguladım ve model eğitimi sürecinde görev aldım.", "Model çıktılarını test ettim ve performans değerlendirme aşamalarında pratik deneyim kazandım."]
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "İletişim",
+    "title": "Birlikte çalışalım.",
+    "description": "Yazılım geliştirme, teknoloji, projeler veya kariyer fırsatları hakkında iletişime geçebilirsiniz.",
+    "cardTitle": "Yeni Fikirlere ve İş Birliklerine Açığım",
+    "cardDescription": "Yazılım geliştirme, teknoloji, projeler veya kariyer fırsatları hakkında iletişime geçebilirsiniz. Yeni fikirler üretmeyi, öğrenmeyi ve birlikte çalışmayı her zaman değerli buluyorum.",
+    "sendMail": "Mail Gönder",
+    "labels": {
+      "location": "Konum",
+      "email": "E-posta"
+    },
+    "values": {
+      "location": "İstanbul, Türkiye"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Rabia Nur Akdaş. Tüm hakları saklıdır."
+  }
+}

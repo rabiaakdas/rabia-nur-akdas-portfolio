@@ -1,0 +1,204 @@
+{
+  "nav": {
+    "home": "Home",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "languageLabel": "Language selector",
+    "items": {
+      "about": "About",
+      "projects": "Projects",
+      "skills": "Skills",
+      "experience": "Experience",
+      "contact": "Contact"
+    }
+  },
+  "hero": {
+    "role": "Junior Software Engineer",
+    "degree": "Computer Engineer",
+    "intro": "I build web, mobile, and backend-focused projects with C#, ASP.NET Core, React, Flutter, and PHP. I care about connecting user interfaces, services, and data flows into reliable product experiences.",
+    "primaryCta": "View My Projects",
+    "contactCta": "Get in Touch",
+    "availability": "Open to new opportunities",
+    "photoAlt": "Profile photo of Rabia Nur Akdaş",
+    "photoFallback": "Add Rabia_Nur_Akdas_Photo.jpg to the public folder to display the profile photo.",
+    "focusTitle": "Areas I Have Worked In",
+    "badges": {
+      "location": "Istanbul",
+      "graduate": "Recent Graduate",
+      "projects": "5+ Projects"
+    },
+    "stats": [
+      { "label": "Projects", "value": "5+" },
+      { "label": "Internships", "value": "2" },
+      { "label": "Status", "value": "Recent Graduate" }
+    ],
+    "focusAreas": [
+      "Web applications",
+      "Mobile applications",
+      "Backend and databases"
+    ]
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "I am a recent computer engineering graduate who keeps growing in software development.",
+    "description": "I focus on building projects across web, mobile, backend, and database development with a practical, multi-technology approach.",
+    "paragraphs": [
+      "I am a recent computer engineering graduate. Through projects built with C#, ASP.NET Core, React, Flutter, PHP, and database technologies, I have gained hands-on experience across web, mobile, and backend development.",
+      "I enjoy working on user interfaces, API integrations, data persistence, and complete project flows. Readable code, problem solving, and continuous improvement matter a lot to me.",
+      "In web and mobile projects, I have experienced how interfaces, API connections, and database processes work together.",
+      "I value teamwork, learning through feedback, and exploring new technologies through real project needs."
+    ],
+    "strengths": {
+      "web": {
+        "title": "Web Development",
+        "description": "I have built web application flows with React, ASP.NET Core, PHP, and Laravel."
+      },
+      "mobile": {
+        "title": "Mobile App Development",
+        "description": "I have worked on mobile interfaces, forms, and API connections with Flutter and Dart."
+      },
+      "data": {
+        "title": "Data and Persistence",
+        "description": "I have practiced storing, relating, and querying data with SQL Server, MySQL, and SQLite."
+      },
+      "learning": {
+        "title": "Learning Discipline",
+        "description": "I turn what I learn into small experiments first, then apply it in real project flows."
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "Featured Projects",
+    "title": "Selected work showing my backend, mobile, and AI practice.",
+    "description": "Each project is structured around problem solving, technology choices, integrations, and clear learning outcomes.",
+    "liveDemo": "Live Demo",
+    "openDemoLabel": "Open {{title}} live demo in a new tab",
+    "openGithubLabel": "Open {{title}} GitHub repository in a new tab",
+    "coverAlt": "{{title}} project cover image",
+    "screens": {
+      "bookVerseBooks": "BookVerse books screen",
+      "bookVerseHome": "home screen preview",
+      "bookVerseProfile": "BookVerse profile screen",
+      "blogLogin": "BlogApp login screen",
+      "blogFeed": "feed screen",
+      "blogDetail": "BlogApp post detail screen"
+    },
+    "items": {
+      "libraryManagement": {
+        "title": "Library Management",
+        "category": "Web",
+        "shortDescription": "A layered ASP.NET Core web application covering books, users, orders, favorites, reviews, and admin workflows.",
+        "features": ["Book listing", "Book search", "Cart management", "Adding favorites", "CRUD operations", "Stock management"]
+      },
+      "fullStackAiChat": {
+        "title": "FullStack AI Chat",
+        "category": "Web / Mobile / Backend / AI",
+        "shortDescription": "A chat application built with a React web client, Expo React Native mobile client, and ASP.NET Core backend. Messages are stored in SQLite and analyzed for sentiment through a Python service.",
+        "features": ["React-based web chat interface", "Expo React Native mobile app", "ASP.NET Core Minimal API backend", "User and message records", "SQLite database integration", "Sentiment analysis for messages"]
+      },
+      "bookVerse": {
+        "title": "BookVerse",
+        "category": "Mobile App / Full Stack",
+        "shortDescription": "A book-sharing platform built with Flutter and a Laravel REST API. Users can share books, manage favorites, message each other, and handle exchange flows.",
+        "features": ["Book sharing", "Favorites", "Exchange system", "Borrowing", "Messaging", "Notifications"]
+      },
+      "blogApp": {
+        "title": "BlogApp",
+        "category": "Mobile App / Full Stack",
+        "shortDescription": "A blog application built with Flutter and a Laravel REST API. Users can publish posts, comment, and interact through likes.",
+        "features": ["Post management", "Comment system", "Like system", "User profile", "Flutter and Laravel integration"]
+      },
+      "petShopWeb": {
+        "title": "PetShop Web",
+        "category": "Web",
+        "shortDescription": "A pet products e-commerce app built with PHP and MySQL, including product listing, category filtering, and cart flows.",
+        "features": ["Product listing", "Category-based filtering", "Cart system", "User login flows"]
+      },
+      "trafficVehicle": {
+        "title": "Traffic Sign Recognition and Obstacle-Avoiding Autonomous Vehicle",
+        "category": "Computer Vision",
+        "shortDescription": "A Python-based computer vision autonomous vehicle project focused on traffic sign detection and obstacle avoidance decisions.",
+        "features": ["Image processing", "Traffic sign detection", "Decision mechanism"]
+      }
+    }
+  },
+  "skills": {
+    "eyebrow": "Tech Stack",
+    "title": "Technology Stack",
+    "description": "A simple category-based overview of the technologies I use.",
+    "groups": {
+      "backend": {
+        "title": "Backend",
+        "description": "My focus area for APIs, data access, and server-side application development."
+      },
+      "frontend": {
+        "title": "Frontend",
+        "description": "Technologies I use for web interfaces and client-side development."
+      },
+      "mobile": {
+        "title": "Mobile",
+        "description": "Client technologies I use in mobile application projects."
+      },
+      "database": {
+        "title": "Database",
+        "description": "Databases I have worked with for storing and querying project data."
+      },
+      "tools": {
+        "title": "Tools and Development Environment",
+        "description": "Tools I use for development, version control, and API testing workflows."
+      },
+      "other": {
+        "title": "Other",
+        "description": "Additional areas included in my project experience."
+      }
+    },
+    "items": {
+      "artificialIntelligence": "Artificial Intelligence",
+      "computerVision": "Computer Vision"
+    }
+  },
+  "experience": {
+    "eyebrow": "Experience",
+    "title": "Experience",
+    "description": "During my internships, I contributed to development, integration, and testing processes.",
+    "position": "Position",
+    "company": "Organization",
+    "badge": "Experience",
+    "date": "Date: ",
+    "location": "Location: ",
+    "technologies": "Technologies Used",
+    "highlights": "Responsibilities",
+    "items": {
+      "ferisoft": {
+        "role": "Software Engineer Intern",
+        "location": "Istanbul",
+        "period": "February 2026 - June 2026",
+        "highlights": ["Developed user interfaces, forms, and detail pages with Flutter and GetX.", "Integrated REST API services and managed JSON-based data flows.", "Tested API issues in service and mobile app integrations and contributed to the resolution process.", "Contributed to team version control and development workflows using Git."]
+      },
+      "hedef": {
+        "role": "Volunteer Intern",
+        "location": "Istanbul",
+        "period": "October 2025 - December 2025",
+        "highlights": ["Contributed to the development of a machine learning-based AI model with Python.", "Applied data preprocessing steps and supported the model training process.", "Tested model outputs and gained practical experience in performance evaluation."]
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let’s work together.",
+    "description": "Feel free to reach out about software development, technology, projects, or career opportunities.",
+    "cardTitle": "Open to New Ideas and Collaborations",
+    "cardDescription": "Feel free to reach out about software development, technology, projects, or career opportunities. I always value creating new ideas, learning, and working together.",
+    "sendMail": "Send Email",
+    "labels": {
+      "location": "Location",
+      "email": "Email"
+    },
+    "values": {
+      "location": "Istanbul, Türkiye"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Rabia Nur Akdaş. All rights reserved."
+  }
+}
