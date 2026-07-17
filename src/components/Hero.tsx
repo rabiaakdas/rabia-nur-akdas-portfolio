@@ -95,7 +95,7 @@ export function Hero() {
               </span>
               {photoLoaded ? (
                 <img
-                  src="/Rabia_Nur_Akdas_Photo.jpg"
+                  src="/Rabia_Nur_Akdas_Photo.png"
                   alt={t("hero.photoAlt")}
                   width={1440}
                   height={1440}
