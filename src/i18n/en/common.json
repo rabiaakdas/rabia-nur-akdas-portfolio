@@ -26,10 +26,10 @@
     "badges": {
       "location": "Istanbul",
       "graduate": "Recent Graduate",
-      "projects": "5+ Projects"
+      "projects": "7 Projects"
     },
     "stats": [
-      { "label": "Projects", "value": "5+" },
+      { "label": "Projects", "value": "7" },
       { "label": "Internships", "value": "2" },
       { "label": "Status", "value": "Recent Graduate" }
     ],
@@ -85,6 +85,14 @@
       "blogDetail": "BlogApp post detail screen"
     },
     "items": {
+      "restaurantManagement": {
+        "title": "Restaurant Management System",
+        "category": "Web / Full Stack",
+        "shortDescription": "A full-stack restaurant management system that lets restaurants manage branches, tables, categories, products, orders, and payments from a single panel. It includes separate permissions for system admins and restaurant managers, secure authentication, and real operational workflows.",
+        "features": ["Multi-restaurant and branch management", "Role-based authorization", "Table and menu management", "Order lifecycle", "Payment and check operations", "PDF check generation", "Dashboard and daily operation summary", "JWT and refresh token security"],
+        "learningOutcome": "I experienced applying Clean Architecture and CQRS in a real business scenario, while building secure authentication, role-based authorization, transaction management, and React-ASP.NET Core integration.",
+        "architecture": "ASP.NET Core Web API backend based on Clean Architecture, CQRS, and MediatR; Entity Framework Core and SQL Server data layer; React and TypeScript frontend."
+      },
       "libraryManagement": {
         "title": "Library Management",
         "category": "Web",

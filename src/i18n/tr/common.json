@@ -26,10 +26,10 @@
     "badges": {
       "location": "İstanbul",
       "graduate": "Yeni Mezun",
-      "projects": "5+ Proje"
+      "projects": "7 Proje"
     },
     "stats": [
-      { "label": "Proje", "value": "5+" },
+      { "label": "Proje", "value": "7" },
       { "label": "Staj", "value": "2" },
       { "label": "Durum", "value": "Yeni Mezun" }
     ],
@@ -85,6 +85,14 @@
       "blogDetail": "BlogApp gönderi detay ekranı"
     },
     "items": {
+      "restaurantManagement": {
+        "title": "Restaurant Management System",
+        "category": "Web / Full Stack",
+        "shortDescription": "Restoranların şube, masa, kategori, ürün, sipariş ve ödeme süreçlerini tek panelden yönetmesini sağlayan full-stack restoran yönetim sistemidir. Sistem yöneticisi ve restoran yöneticisi için ayrı yetkiler, güvenli kimlik doğrulama ve gerçek operasyon akışları içerir.",
+        "features": ["Çoklu restoran ve şube yönetimi", "Rol bazlı yetkilendirme", "Masa ve menü yönetimi", "Sipariş yaşam döngüsü", "Ödeme ve adisyon işlemleri", "PDF adisyon oluşturma", "Dashboard ve günlük operasyon özeti", "JWT ve refresh token güvenliği"],
+        "learningOutcome": "Clean Architecture ve CQRS yaklaşımını gerçek bir iş senaryosunda uygulamayı; güvenli kimlik doğrulama, rol bazlı yetkilendirme, transaction yönetimi ve React–ASP.NET Core entegrasyonu kurmayı deneyimledim.",
+        "architecture": "ASP.NET Core Web API, Clean Architecture, CQRS ve MediatR tabanlı backend; Entity Framework Core ve SQL Server veri katmanı; React ve TypeScript tabanlı frontend."
+      },
       "libraryManagement": {
         "title": "Library Management",
         "category": "Web",

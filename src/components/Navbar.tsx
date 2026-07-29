@@ -1,6 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { trackLanguageChange } from "../lib/analytics";
 
 const navItems = [
   { labelKey: "nav.items.about", href: "#about" },
@@ -112,7 +113,13 @@ export function Navbar() {
 
   const activeLanguage = i18n.resolvedLanguage ?? i18n.language;
   const changeLanguage = (language: "tr" | "en") => {
-    void i18n.changeLanguage(language);
+    if (activeLanguage.startsWith(language)) {
+      return;
+    }
+
+    void i18n.changeLanguage(language).then(() => {
+      trackLanguageChange(activeLanguage, language);
+    });
   };
 
   const languageButtonClassName = (language: "tr" | "en") =>

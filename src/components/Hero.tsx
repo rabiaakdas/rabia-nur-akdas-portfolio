@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getCvDownload } from "../data/cv";
 import { socialLinks } from "../data/socials";
+import { trackCvDownload, trackHeroSocialClick } from "../lib/analytics";
 
 const heroBadges = [
   { labelKey: "hero.badges.location", icon: MapPin },
@@ -72,6 +73,7 @@ export function Hero() {
                   rel="noreferrer"
                   aria-label={item.label}
                   className="button-secondary min-h-[52px] py-3 text-base shadow-tiny lg:w-auto lg:text-sm"
+                  onClick={() => trackHeroSocialClick(item.label)}
                 >
                   <Icon className="size-4" aria-hidden="true" />
                   {item.label}
@@ -85,6 +87,7 @@ export function Hero() {
               href={cvDownload.href}
               download={cvDownload.fileName}
               className="button-secondary col-span-2 min-h-[52px] py-3 text-base shadow-tiny lg:col-span-1 lg:w-auto lg:text-sm"
+              onClick={() => trackCvDownload(i18n.resolvedLanguage ?? i18n.language)}
             >
               <Download className="size-4" aria-hidden="true" />
               {t("hero.downloadCv")}

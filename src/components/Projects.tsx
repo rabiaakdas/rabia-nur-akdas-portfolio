@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, CheckCircle2, Github, ImageIcon } from "lucide-react";
+import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { projects } from "../data/projects";
+import { trackProjectCardView, trackProjectDemoClick, trackProjectGithubClick } from "../lib/analytics";
 import { Section } from "./Section";
 
 const bookVerseScreens = {
@@ -26,6 +28,7 @@ const imageSizes: Record<string, { width: number; height: number }> = {
   "/fullstack-ai-chat-cover.png": { width: 1440, height: 810 },
   "/library-management-cover.png": { width: 1298, height: 730 },
   "/petshopweb.png": { width: 1672, height: 941 },
+  "/restaurant-management-cover.svg": { width: 1440, height: 810 },
   "/trafik-cover.png": { width: 1672, height: 941 },
 };
 
@@ -87,6 +90,55 @@ function MobileProjectPreview({ images, title, theme, alts }: MobileProjectPrevi
 
 export function Projects() {
   const { t } = useTranslation();
+  const projectGridRef = useRef<HTMLDivElement | null>(null);
+  const viewedProjectIdsRef = useRef<Set<string>>(new Set());
+
+  useEffect(() => {
+    const projectGrid = projectGridRef.current;
+
+    if (!projectGrid) {
+      return;
+    }
+
+    const projectCards = Array.from(projectGrid.querySelectorAll<HTMLElement>("[data-analytics-project-id]"));
+
+    if (projectCards.length === 0) {
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          }
+
+          const projectCard = entry.target as HTMLElement;
+          const projectId = projectCard.dataset.analyticsProjectId;
+
+          if (!projectId || viewedProjectIdsRef.current.has(projectId)) {
+            observer.unobserve(projectCard);
+            return;
+          }
+
+          viewedProjectIdsRef.current.add(projectId);
+          trackProjectCardView(projectId, projectCard.dataset.analyticsProjectTitle ?? projectId);
+          observer.unobserve(projectCard);
+        });
+      },
+      { rootMargin: "0px 0px -10% 0px", threshold: 0.35 },
+    );
+
+    projectCards.forEach((projectCard) => {
+      const projectId = projectCard.dataset.analyticsProjectId;
+
+      if (projectId && !viewedProjectIdsRef.current.has(projectId)) {
+        observer.observe(projectCard);
+      }
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <Section
@@ -96,10 +148,11 @@ export function Projects() {
       description={t("projects.description")}
       align="left"
     >
-      <div className="grid gap-5 md:grid-cols-2">
+      <div ref={projectGridRef} className="grid gap-5 md:grid-cols-2">
         {projects.map((project, index) => {
           const projectTitle = t(project.titleKey);
           const projectFeatures = t(project.featuresKey, { returnObjects: true }) as string[];
+          const isRestaurantManagement = project.id === "restaurantManagement";
           const isLibraryManagement = project.id === "libraryManagement";
           const isFullStackAIChat = project.id === "fullStackAiChat";
           const isBookVerse = project.id === "bookVerse";
@@ -108,13 +161,15 @@ export function Projects() {
           const hasMobilePreview = isBookVerse || isBlogApp;
           const hasGithubUrl = Boolean(project.githubUrl);
           const hasProjectUrl = Boolean(project.projectUrl);
-          const showsAllDetails = isLibraryManagement || isBookVerse;
+          const showsAllDetails = isRestaurantManagement || isLibraryManagement || isBookVerse;
           const visibleTechnologies = showsAllDetails ? project.technologies : project.technologies.slice(0, 6);
           const visibleFeatures = showsAllDetails ? projectFeatures : projectFeatures.slice(0, 4);
 
           return (
             <motion.article
               key={project.id}
+              data-analytics-project-id={project.id}
+              data-analytics-project-title={projectTitle}
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.25 }}
@@ -219,6 +274,7 @@ export function Projects() {
                       rel="noreferrer"
                       aria-label={t("projects.openDemoLabel", { title: projectTitle })}
                       className="button-secondary max-w-full"
+                      onClick={() => trackProjectDemoClick(project.id, projectTitle)}
                     >
                       {t("projects.liveDemo")}
                       <ArrowUpRight className="size-4" aria-hidden="true" />
@@ -231,6 +287,7 @@ export function Projects() {
                       rel="noreferrer"
                       aria-label={t("projects.openGithubLabel", { title: projectTitle })}
                       className="button-primary max-w-full"
+                      onClick={() => trackProjectGithubClick(project.id, projectTitle)}
                     >
                       <Github className="size-4" aria-hidden="true" />
                       GitHub

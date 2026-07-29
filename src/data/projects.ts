@@ -6,11 +6,37 @@ export type Project = {
   image?: string;
   technologies: string[];
   featuresKey: string;
+  learningOutcomeKey?: string;
+  architectureKey?: string;
   githubUrl?: string;
   projectUrl?: string;
 };
 
 export const projects: Project[] = [
+  {
+    id: "restaurantManagement",
+    titleKey: "projects.items.restaurantManagement.title",
+    categoryKey: "projects.items.restaurantManagement.category",
+    shortDescriptionKey: "projects.items.restaurantManagement.shortDescription",
+    image: "/restaurant-management-cover.svg",
+    technologies: [
+      "ASP.NET Core Web API",
+      "React",
+      "TypeScript",
+      "Entity Framework Core",
+      "SQL Server",
+      "Clean Architecture",
+      "CQRS",
+      "MediatR",
+      "JWT",
+      "FluentValidation",
+      "QuestPDF",
+    ],
+    featuresKey: "projects.items.restaurantManagement.features",
+    learningOutcomeKey: "projects.items.restaurantManagement.learningOutcome",
+    architectureKey: "projects.items.restaurantManagement.architecture",
+    githubUrl: "https://github.com/rabiaakdas/RestaurantManagement",
+  },
   {
     id: "libraryManagement",
     titleKey: "projects.items.libraryManagement.title",

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Mail, Send } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { contactItems, socialLinks } from "../data/socials";
+import { trackEmailClick } from "../lib/analytics";
 import { Section } from "./Section";
 
 export function Contact() {
@@ -34,6 +35,7 @@ export function Contact() {
             <a
               href="mailto:rabiaakdas00@gmail.com"
               className="button-primary px-6"
+              onClick={() => trackEmailClick("contact_button")}
             >
               <Mail className="size-5" aria-hidden="true" />
               {t("contact.sendMail")}
@@ -68,6 +70,7 @@ export function Contact() {
               href={item.href}
               target={item.href.startsWith("http") ? "_blank" : undefined}
               rel={item.href.startsWith("http") ? "noreferrer" : undefined}
+              onClick={item.href.startsWith("mailto:") ? () => trackEmailClick("contact_card") : undefined}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
