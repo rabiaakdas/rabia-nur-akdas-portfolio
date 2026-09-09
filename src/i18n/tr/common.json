@@ -26,10 +26,10 @@
     "badges": {
       "location": "İstanbul",
       "graduate": "Yeni Mezun",
-      "projects": "8 Proje"
+      "projects": "11 Proje"
     },
     "stats": [
-      { "label": "Proje", "value": "8" },
+      { "label": "Proje", "value": "11" },
       { "label": "Staj", "value": "2" },
       { "label": "Durum", "value": "Yeni Mezun" }
     ],
@@ -136,6 +136,30 @@
         "category": "Bilgisayarlı Görü",
         "shortDescription": "Python ile geliştirilen bilgisayarlı görü odaklı otonom araç projesi. Trafik levhası algılama ve engelden kaçınma kararlarını ele alır.",
         "features": ["Görüntü işleme", "Trafik işareti algılama", "Karar mekanizması"]
+      },
+      "voiceAnalysisDeepLearning": {
+        "title": "Voice Analysis Project - Deep Learning",
+        "category": "Derin Öğrenme / Ses Analizi",
+        "shortDescription": "Ses dosyalarından mel-spektrogram özellikleri çıkararak CNN tabanlı bir modelle sanatçı sınıflandırması yapan Python derin öğrenme projesi.",
+        "features": ["Librosa ile ses dosyası yükleme", "Mel-spektrogram çıkarımı", "128x128 spektrogram yeniden boyutlandırma", "One-hot etiket dönüşümü", "Conv2D, MaxPooling ve Dropout katmanları", "Tek tahmin ve top-N tahmin fonksiyonları"],
+        "learningOutcome": "Ses verisini CNN ile işlenebilir görüntü benzeri özelliklere dönüştürmeyi; TensorFlow/Keras ile sınıflandırma modeli kurmayı ve tahmin fonksiyonları hazırlamayı deneyimledim.",
+        "architecture": "Python scripti; veri klasörlerinden sınıf okuma, Librosa ile mel-spektrogram çıkarımı, OpenCV ile boyutlandırma, Scikit-learn ile eğitim-test ayrımı ve TensorFlow/Keras Sequential CNN modeli."
+      },
+      "melanomaSkinCancer": {
+        "title": "Melanoma Skin Cancer Detection",
+        "category": "Derin Öğrenme / Görüntü Sınıflandırma",
+        "shortDescription": "Cilt görüntülerini kanserli ve kanserli değil sınıfları üzerinden inceleyen, TensorFlow/Keras ile geliştirilmiş eğitim ve araştırma amaçlı ikili görüntü sınıflandırma çalışması.",
+        "features": ["150x150 görüntü boyutlandırma", "Piksel normalizasyonu", "ImageDataGenerator ile veri artırma", "CNN tabanlı ikili sınıflandırma", "Sigmoid çıkış katmanı", "Confusion matrix ve TP/FP/FN/TN hesaplama"],
+        "learningOutcome": "Görüntü sınıflandırma akışında veri artırma, normalizasyon, CNN eğitimi ve temel sınıflandırma değerlendirme metriklerini uygulamayı deneyimledim.",
+        "architecture": "Train ve validation klasörlerinden beslenen Keras ImageDataGenerator akışı; Conv2D, MaxPooling2D, Flatten, Dense ve Dropout katmanlarından oluşan Sequential CNN; Adam optimizer ve binary_crossentropy kaybı."
+      },
+      "usaAccidentDataAnalysis": {
+        "title": "USA Accident Data Analysis",
+        "category": "Veri Analizi / Makine Öğrenmesi",
+        "shortDescription": "Kaggle US Accidents veri seti üzerinde kaza şiddeti değişkenini analiz eden; ön işleme, özellik mühendisliği, boyut indirgeme ve farklı sınıflandırma modellerini karşılaştıran grup çalışması.",
+        "features": ["Severity 1-4 hedef değişken analizi", "Eksik değer doldurma ve uç değer kırpma", "One-hot encoding ve StandardScaler", "PCA ile boyut indirgeme", "SMOTE kullanılan modelleme akışları", "Boosting ve baseline modellerinin karşılaştırılması"],
+        "learningOutcome": "Büyük ölçekli trafik verisinde veri temizleme, özellik seçimi, sınıf dengesizliği, PCA ve model karşılaştırma süreçlerini uygulamayı deneyimledim.",
+        "architecture": "Jupyter Notebook tabanlı analiz akışı; Pandas/NumPy ile veri hazırlama, Scikit-learn pipeline adımları, PCA ve SMOTE kullanımı, XGBoost, LightGBM, CatBoost, Logistic Regression ve baseline modelleriyle değerlendirme."
       }
     }
   },

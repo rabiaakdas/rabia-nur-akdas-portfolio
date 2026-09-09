@@ -26,10 +26,10 @@
     "badges": {
       "location": "Istanbul",
       "graduate": "Recent Graduate",
-      "projects": "8 Projects"
+      "projects": "11 Projects"
     },
     "stats": [
-      { "label": "Projects", "value": "8" },
+      { "label": "Projects", "value": "11" },
       { "label": "Internships", "value": "2" },
       { "label": "Status", "value": "Recent Graduate" }
     ],
@@ -136,6 +136,30 @@
         "category": "Computer Vision",
         "shortDescription": "A Python-based computer vision autonomous vehicle project focused on traffic sign detection and obstacle avoidance decisions.",
         "features": ["Image processing", "Traffic sign detection", "Decision mechanism"]
+      },
+      "voiceAnalysisDeepLearning": {
+        "title": "Voice Analysis Project - Deep Learning",
+        "category": "Deep Learning / Voice Analysis",
+        "shortDescription": "A Python deep learning project that extracts mel-spectrogram features from audio files and uses a CNN-based model for artist classification.",
+        "features": ["Audio loading with Librosa", "Mel-spectrogram extraction", "128x128 spectrogram resizing", "One-hot label conversion", "Conv2D, MaxPooling, and Dropout layers", "Single prediction and top-N prediction functions"],
+        "learningOutcome": "I practiced converting audio data into CNN-friendly image-like features, building a TensorFlow/Keras classification model, and preparing prediction helper functions.",
+        "architecture": "Python script with class loading from data folders, mel-spectrogram extraction through Librosa, resizing with OpenCV, train-test splitting through Scikit-learn, and a TensorFlow/Keras Sequential CNN model."
+      },
+      "melanomaSkinCancer": {
+        "title": "Melanoma Skin Cancer Detection",
+        "category": "Deep Learning / Image Classification",
+        "shortDescription": "An educational and research-oriented binary image classification study built with TensorFlow/Keras to examine skin images across cancer and non-cancer classes.",
+        "features": ["150x150 image resizing", "Pixel normalization", "Data augmentation with ImageDataGenerator", "CNN-based binary classification", "Sigmoid output layer", "Confusion matrix and TP/FP/FN/TN calculation"],
+        "learningOutcome": "I practiced data augmentation, normalization, CNN training, and basic classification evaluation metrics within an image classification workflow.",
+        "architecture": "Keras ImageDataGenerator flow from train and validation folders; a Sequential CNN with Conv2D, MaxPooling2D, Flatten, Dense, and Dropout layers; Adam optimizer and binary_crossentropy loss."
+      },
+      "usaAccidentDataAnalysis": {
+        "title": "USA Accident Data Analysis",
+        "category": "Data Analysis / Machine Learning",
+        "shortDescription": "A group data mining study on the Kaggle US Accidents dataset, analyzing accident severity through preprocessing, feature engineering, dimensionality reduction, and model comparison.",
+        "features": ["Severity 1-4 target analysis", "Missing value imputation and outlier clipping", "One-hot encoding and StandardScaler", "Dimensionality reduction with PCA", "Modeling workflows using SMOTE", "Comparison of boosting and baseline models"],
+        "learningOutcome": "I practiced data cleaning, feature selection, class imbalance handling, PCA, and model comparison on a large-scale traffic accident dataset.",
+        "architecture": "Jupyter Notebook-based analysis workflow using Pandas/NumPy for data preparation, Scikit-learn pipeline steps, PCA and SMOTE, plus XGBoost, LightGBM, CatBoost, Logistic Regression, and baseline models for evaluation."
       }
     }
   },

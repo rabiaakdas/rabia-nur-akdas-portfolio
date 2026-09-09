@@ -31,6 +31,9 @@ const imageSizes: Record<string, { width: number; height: number }> = {
   "/petshopweb.png": { width: 1672, height: 941 },
   "/restaurant-management-cover.svg": { width: 1440, height: 810 },
   "/trafik-cover.png": { width: 1672, height: 941 },
+  "/voice-analysis-cover.png": { width: 1600, height: 900 },
+  "/melanoma-skin-cancer-cover.png": { width: 1600, height: 900 },
+  "/usa-acc-cover.png": { width: 1600, height: 900 },
 };
 
 type MobileProjectPreviewProps = {
