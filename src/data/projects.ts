@@ -14,6 +14,27 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "careerPilotAi",
+    titleKey: "projects.items.careerPilotAi.title",
+    categoryKey: "projects.items.careerPilotAi.category",
+    shortDescriptionKey: "projects.items.careerPilotAi.shortDescription",
+    technologies: [
+      "React",
+      "TypeScript",
+      "ASP.NET Core Web API",
+      "Entity Framework Core",
+      "PostgreSQL",
+      "JWT",
+      "Yapay Zekâ API",
+      "Docker",
+    ],
+    featuresKey: "projects.items.careerPilotAi.features",
+    learningOutcomeKey: "projects.items.careerPilotAi.learningOutcome",
+    architectureKey: "projects.items.careerPilotAi.architecture",
+    githubUrl: "https://github.com/rabiaakdas/careerpilot-ai",
+    projectUrl: "https://careerpilot-ai-seven-mu.vercel.app/",
+  },
+  {
     id: "restaurantManagement",
     titleKey: "projects.items.restaurantManagement.title",
     categoryKey: "projects.items.restaurantManagement.category",

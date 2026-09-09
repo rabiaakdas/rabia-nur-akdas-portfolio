@@ -26,10 +26,10 @@
     "badges": {
       "location": "Istanbul",
       "graduate": "Recent Graduate",
-      "projects": "7 Projects"
+      "projects": "8 Projects"
     },
     "stats": [
-      { "label": "Projects", "value": "7" },
+      { "label": "Projects", "value": "8" },
       { "label": "Internships", "value": "2" },
       { "label": "Status", "value": "Recent Graduate" }
     ],
@@ -85,6 +85,14 @@
       "blogDetail": "BlogApp post detail screen"
     },
     "items": {
+      "careerPilotAi": {
+        "title": "CareerPilot AI",
+        "category": "Full Stack / Artificial Intelligence",
+        "shortDescription": "A full-stack career platform where users can upload their CVs, receive AI-supported analysis results, see their strengths and improvement areas, and manage their career process more consciously.",
+        "features": ["User registration and login system", "JWT-based authentication", "CV upload and analysis", "AI-supported CV evaluation", "Display of strengths and improvement areas", "User-specific analysis results", "Responsive user interface", "Frontend, backend, and database integration"],
+        "learningOutcome": "I experienced building an end-to-end full-stack application with React and ASP.NET Core Web API, including JWT-based authentication, file upload, AI service integration, PostgreSQL data management, and live deployment workflows.",
+        "architecture": "React and TypeScript frontend, ASP.NET Core Web API backend, Entity Framework Core data access layer, PostgreSQL database, JWT-based authentication, and external AI service integration."
+      },
       "restaurantManagement": {
         "title": "Restaurant Management System",
         "category": "Web / Full Stack",

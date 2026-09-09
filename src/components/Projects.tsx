@@ -152,6 +152,7 @@ export function Projects() {
         {projects.map((project, index) => {
           const projectTitle = t(project.titleKey);
           const projectFeatures = t(project.featuresKey, { returnObjects: true }) as string[];
+          const isCareerPilotAi = project.id === "careerPilotAi";
           const isRestaurantManagement = project.id === "restaurantManagement";
           const isLibraryManagement = project.id === "libraryManagement";
           const isFullStackAIChat = project.id === "fullStackAiChat";
@@ -161,7 +162,7 @@ export function Projects() {
           const hasMobilePreview = isBookVerse || isBlogApp;
           const hasGithubUrl = Boolean(project.githubUrl);
           const hasProjectUrl = Boolean(project.projectUrl);
-          const showsAllDetails = isRestaurantManagement || isLibraryManagement || isBookVerse;
+          const showsAllDetails = isCareerPilotAi || isRestaurantManagement || isLibraryManagement || isBookVerse;
           const visibleTechnologies = showsAllDetails ? project.technologies : project.technologies.slice(0, 6);
           const visibleFeatures = showsAllDetails ? projectFeatures : projectFeatures.slice(0, 4);
 
@@ -271,7 +272,7 @@ export function Projects() {
                     <a
                       href={project.projectUrl}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       aria-label={t("projects.openDemoLabel", { title: projectTitle })}
                       className="button-secondary max-w-full"
                       onClick={() => trackProjectDemoClick(project.id, projectTitle)}
@@ -284,7 +285,7 @@ export function Projects() {
                     <a
                       href={project.githubUrl}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       aria-label={t("projects.openGithubLabel", { title: projectTitle })}
                       className="button-primary max-w-full"
                       onClick={() => trackProjectGithubClick(project.id, projectTitle)}

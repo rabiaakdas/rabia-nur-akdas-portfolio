@@ -26,10 +26,10 @@
     "badges": {
       "location": "İstanbul",
       "graduate": "Yeni Mezun",
-      "projects": "7 Proje"
+      "projects": "8 Proje"
     },
     "stats": [
-      { "label": "Proje", "value": "7" },
+      { "label": "Proje", "value": "8" },
       { "label": "Staj", "value": "2" },
       { "label": "Durum", "value": "Yeni Mezun" }
     ],
@@ -85,6 +85,14 @@
       "blogDetail": "BlogApp gönderi detay ekranı"
     },
     "items": {
+      "careerPilotAi": {
+        "title": "CareerPilot AI",
+        "category": "Full Stack / Yapay Zekâ",
+        "shortDescription": "Kullanıcıların CV’lerini yükleyerek yapay zekâ destekli analiz sonuçları alabildiği, güçlü ve geliştirilmesi gereken yönlerini görebildiği ve kariyer süreçlerini daha bilinçli yönetebildiği full-stack bir kariyer platformudur.",
+        "features": ["Kullanıcı kayıt ve giriş sistemi", "JWT tabanlı kimlik doğrulama", "CV yükleme ve analiz etme", "Yapay zekâ destekli CV değerlendirmesi", "Güçlü ve geliştirilmesi gereken yönlerin gösterilmesi", "Kullanıcıya özel analiz sonuçları", "Responsive kullanıcı arayüzü", "Frontend, backend ve veritabanı entegrasyonu"],
+        "learningOutcome": "React ve ASP.NET Core Web API kullanarak uçtan uca bir full-stack uygulama geliştirmeyi; JWT tabanlı kimlik doğrulama, dosya yükleme, yapay zekâ servisi entegrasyonu, PostgreSQL veri yönetimi ve uygulamayı canlıya alma süreçlerini deneyimledim.",
+        "architecture": "React ve TypeScript tabanlı frontend, ASP.NET Core Web API backend, Entity Framework Core veri erişim katmanı, PostgreSQL veritabanı, JWT tabanlı kimlik doğrulama ve harici yapay zekâ servisi entegrasyonu."
+      },
       "restaurantManagement": {
         "title": "Restaurant Management System",
         "category": "Web / Full Stack",
