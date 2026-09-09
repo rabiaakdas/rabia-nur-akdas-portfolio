@@ -19,6 +19,7 @@ const blogAppScreens = {
 };
 
 const imageSizes: Record<string, { width: number; height: number }> = {
+  "/careerpilot-ai-cover.png": { width: 1876, height: 969 },
   "/blogapp-detail.png": { width: 387, height: 821 },
   "/blogapp-feed.png": { width: 386, height: 832 },
   "/blogapp-login.png": { width: 382, height: 830 },

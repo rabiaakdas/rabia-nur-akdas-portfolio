@@ -18,6 +18,7 @@ export const projects: Project[] = [
     titleKey: "projects.items.careerPilotAi.title",
     categoryKey: "projects.items.careerPilotAi.category",
     shortDescriptionKey: "projects.items.careerPilotAi.shortDescription",
+    image: "/careerpilot-ai-cover.png",
     technologies: [
       "React",
       "TypeScript",
